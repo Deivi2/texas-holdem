@@ -1,0 +1,303 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: #510101;
+    height: 500px;
+}
+
+
+.table > ul{
+    list-style-type: none;
+    width: 50px;
+
+}
+
+.table > ul > li{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 75%;
+    color: white;
+    text-align: center;
+}
+
+.table > ul > li:nth-child(1){
+    top: 24px;
+    right: 60px;
+}
+.table > ul > li:nth-child(2){
+    top: 85px;
+    right: 91px;
+}
+.table > ul > li:nth-child(3){
+    top: 146px;
+    right: 61px;
+}
+
+.table > ul > li:nth-child(4){
+    top: 159px;
+    left: 154px;
+}
+
+.table > ul > li:nth-child(5){
+    top: 111px;
+    left: 338px;
+}
+
+.table > ul > li:nth-child(6){
+    top: 0px;
+    left: 565px;
+}
+
+.table > ul > li:nth-child(7){
+    top: -163px;
+    left: 605px;
+}
+
+.table > ul > li:nth-child(8){
+    top: -319px;
+    left: 583px;
+}
+
+.table{
+    width: 650px;
+    height: 315px;
+    margin: 0 auto;
+    background-image: url("./assets/poker-table.png");
+    background-repeat: no-repeat;
+}
+.table > .cards{
+    position: relative;
+    bottom: 345px;
+    height: 100px;
+    width: 123px;
+    margin: 0 auto;
+}
+/*.bank-bet{*/
+    /*position: relative;*/
+    /*bottom: 345px;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*margin: 0 auto;*/
+    /*background-color: #4CAF50;*/
+/*}*/
+.table > .bank{
+    position: relative;
+    bottom: 345px;
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #8bc34a;
+}
+
+.table >  .bet{
+    position: relative;
+    bottom: 345px;
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #8bc34a;
+
+}
+
+.table > .bank::before{
+    content: "Bank: ";
+}
+.table > .bet::before{
+    content: "Bet: ";
+}
+
+.table > .bank::after{
+    content: " £";
+}
+.table > .bet::after{
+    content: " £";
+}
+
+.container > .menu{
+    position: absolute;
+    z-index: 9999;
+    display: block;
+
+}
+
+.container > .actions{
+    background-color: #cc1b2f; /* Green */
+    color: white;
+    padding: 4px 15px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    top: 81px;
+    display: block;
+    border: 1px solid #000000;
+}
+
+.container > .menu > button{
+    background-color: seagreen; /* Green */
+    color: white;
+    padding: 4px 15px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    top: 81px;
+    display: block;
+    border: 1px solid #000000;
+
+
+}
+
+body > div > div.game{
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+    display: none;
+
+}
+
+.container > .game > button{
+    width: 130px;
+    background-color: seagreen; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #000000;
+
+
+}
+
+.handCard{
+    /*position: absolute;*/
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid #c6c8d6;
+    font-size: 12px;
+}
+
+.playerMoney::after{
+    content: "£";
+}
+
+.playerBets{
+    font-weight: bold;
+    color: #8bc34a;
+}
+
+.playerBets::after{
+    content: "£";
+}
+
+#list > li:nth-child(1) > div.playerBets{
+    position: absolute;
+    bottom: -26px;
+    left: 79px;
+}
+
+
+#list > li:nth-child(2) > div.playerBets{
+    position: absolute;
+    bottom: 18px;
+    left: 95px;
+}
+
+
+#list > li:nth-child(3) > div.playerBets{
+    position: absolute;
+    bottom: 64px;
+    left: 88px;
+}
+
+
+#list > li:nth-child(4) > div.playerBets{
+    position: absolute;
+    bottom: 97px;
+    left: 11px;
+}
+
+
+#list > li:nth-child(5) > div.playerBets{
+    position: absolute;
+    bottom: 99px;
+    left: 17px;
+}
+
+
+#list > li:nth-child(6) > div.playerBets{
+    position: absolute;
+    bottom: 62px;
+    left: -58px;
+}
+
+
+#list > li:nth-child(7) > div.playerBets{
+    position: absolute;
+    bottom: 16px;
+    left: -65px;
+}
+
+
+#list > li:nth-child(8) > div.playerBets{
+    position: absolute;
+    bottom: -13px;
+    left: -61px;
+}
+
+#list > li > .playerScore{
+    width: 100px;
+    text-align: center;
+    margin-left: -24px;
+}
+
+.container > .model{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(173, 175, 189, 0.5);
+    display: none;
+}
+
+
+.container > .model > .tab{
+    position: relative;
+    border-radius: 10%;
+    border: 1px solid #cecae5;
+    box-shadow: -1px 9px 93px 0px rgba(0,0,0,0.49);;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 120px;
+    background-color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+.container > .model > .tab > button{
+    width: 130px;
+    background-color: seagreen; /* Green */
+    color: white;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #000000;
+}
+
+
